@@ -81,8 +81,7 @@ class App extends React.Component {
     togglePayLater = (event) => {
         const td = event.currentTarget.parentNode;
         const tr = td.parentNode;
-        tr.classList.add('grey');
-        console.log(tr);
+        tr.className === "grey" ? tr.classList.remove("grey") :  tr.classList.add('grey');
     }
     //   render
     render() {
